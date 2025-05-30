@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>У МЕНЕ Є ФОТКА З ПІДІДІ</title>
+    <style>
+        body {
+            background-color: #f7d2f3;  /* Задає фоновий колір для всієї сторінки (світло-рожевий) */
+            margin: 0;  /* Видаляє стандартні відступи у браузері */
+            padding: 0;  /* Видаляє стандартне внутрішнє наповнення у браузері */
+        }
+
+        header {
+            text-align: center;  /* Вирівнює текст в середині елемента header */
+        }
+
+        .kpop {
+            font-family: 'Gill Sans', sans-serif;  /* Задає шрифт для заголовка */
+            background-color: #fc95f0;  /* Світло-рожевий фон для елемента заголовка */
+            font-size: 50px;  /* Задає розмір шрифту заголовка */
+            color: #ffc4f8;  /* Колір тексту заголовка (світло-рожевий) */
+            margin: 0;  /* Видаляє відступи з усіх сторін */
+            padding: 20px;  /* Додає внутрішній відступ всередині елемента */
+        }
+
+        .straykids {
+            width: 1000px;  /* Ширина зображення */
+            height: 500px;  /* Висота зображення */
+        }
+
+        a {
+            text-decoration: none;  /* Вимикає підкреслення посилань */
+            color: #db6bd8;  /* Колір тексту посилання (фіолетовий) */
+        }
+
+        ul.menu {
+            background-color: #fa98ef;  /* Колір фону для меню (світло-рожевий) */
+            list-style: none;  /* Видаляє маркери для списку */
+            margin: 0;  /* Видаляє зовнішні відступи */
+            padding: 0;  /* Видаляє внутрішні відступи */
+            text-align: center;  /* Вирівнює список по центру */
+        }
+
+        .menu > li {
+            margin: 20px;  /* Додає відступи між елементами списку */
+            font-size: 20px;  /* Розмір шрифту для елементів списку */
+            display: inline-block;  /* Відображає елементи списку в рядок */
+            position: relative;  /* Задає відносне позиціювання для подальших елементів */
+        }
+
+        .menu > li > a {
+            display: block;  /* Задає блочне відображення для посилань */
+            padding: 10px 20px;  /* Внутрішні відступи для посилань */
+        }
+
+        .show .hidden {
+            display: none;  /* Спочатку приховує випадаюче меню */
+            position: absolute;  /* Абсолютне позиціювання для випадаючого меню */
+            top: 100%;  /* Випадаюче меню з'являється під елементом списку */
+            left: 0;  /* Встановлює лівий край меню на початок */
+            background-color: #fa98ef;  /* Фон випадаючого меню */
+            padding: 10px;  /* Внутрішні відступи для меню */
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);  /* Додає тінь для створення ефекту підняття */
+            width: 800px;  /* Ширина випадаючого меню */
+        }
+
+        .show:hover .hidden {
+            display: block;  /* Показує меню при наведенні на батьківський елемент */
+            display: grid;  /* Використовує CSS Grid для розташування елементів меню */
+            grid-template-columns: repeat(4, 1fr);  /* Розподіляє меню на 4 рівні колонки */
+            grid-gap: 10px;  /* Міжколонковий відступ */
+        }
+
+        .hidden li {
+            display: flex;  /* Використовує flexbox для вирівнювання елементів меню */
+            align-items: center;  /* Вертикальне вирівнювання елементів меню */
+            justify-content: center;  /* Горизонтальне вирівнювання елементів меню */
+            margin: 10px 0;  /* Відступи зверху та знизу елементів */
+            padding: 5px 0;  /* Відступи з боків елементів */
+        }
+
+        .hidden li:hover {
+            background-color: #f7d2f3;  /* Колір фону при наведенні на елемент */
+            border-radius: 5px;  /* Згладжує кути елемента */
+        }
+
+        .mymenu {
+            margin-bottom: 40px;  /* Відступ знизу для меню */
+        }
+
+        .tobaru, .prodykt, .mini, .miyon{
+            display: inline-block;  /* Відображає ці елементи в рядок */
+            margin: 20px;  /* Відступи між елементами */
+        }
+
+        h2 {
+            text-align: center;  /* Вирівнює заголовок по центру */
+            font-family: 'Gill Sans', sans-serif;  /* Шрифт для заголовка */
+            color: #db6bd8;  /* Колір тексту заголовка */
+        }
+
+        div {
+            text-align: center;  /* Вирівнює текст по центру */
+            font-family: 'Gill Sans', sans-serif;  /* Шрифт для тексту */
+            color: #b84cb7;  /* Колір тексту */
+            font-size: 20px;  /* Розмір шрифту для тексту */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="kpop">JUZOSHOP</h1>
+    </header>
+
+    <div class="mymenu">
+        <ul class="menu">
+            <li><a href="#">ГОЛОВНА</a></li>
+            <li class="show"><a href="#">ТОВАРИ І ПОСЛУГИ</a>
+                <ul class="hidden">
+                    <li><a href="index1.html">Бокси</a></li>
+                    <li><a href="index4.html">косметика</a></li>
+                    <li><a href="index3.html">K-pop іграшки</a></li>
+                    <li><a href="index5.html">Брелочки / Значки</a></li>
+                    <li>К-pop сумки</li>
+                    <li><a href="index2.html">Картки</a></li>
+                    <li>Аніме Товари</li>
+                    <li>Постери А3</li>
+                    <li>Аксесуари для карток</li>
+                    <li>Аксесуари</li>
+                    <li>Офіційні товари</li>
+                    <li>Товари по Дорамах</li>
+                    <li>Наліпки</li>
+                    <li>Шопери</li>
+                    <li>Пазли</li>
+                    <li>Шкільне приладдя</li>
+                    <li>Корейські смаколики</li>
+                    <li>Чашки</li>
+                    <li>Акрилові фігурки</li>
+                    <li>Термочашки</li>
+                </ul>
+            </li>
+            <li><a href="#">ДОСТАВКА ТА ОПЛАТА</a></li>
+            <li><a href="#">КОНТАКТИ</a></li>
+            <li><a href="#">ПРО НАС</a></li>
+            <li><a href="#">ПРАВИЛА ПОВЕРНЕННЯ ТОВАРУ</a></li>
+        </ul>
+    </div>
+
+    <div align="center">
+        <img src="https://images.prom.ua/5517076253_5517076253.jpg" class="straykids">
+    </div>
+
+    <h2>Групи товарів та послуг</h2>
+
+    <div align="center">
+        <div class="tobaru" align="center"><img src="https://images.prom.ua/6272205225_w297_h200_boksi.jpg">
+        <br><div >БОКСИ</div>
+        <img src="https://images.prom.ua/6274006723_w297_h200_kartki.jpg" >
+        <br><div>КАРТКИ</div>
+        <img src="https://images.prom.ua/6270932244_w297_h200_ofitsijni-tovari.jpg">
+        <br><div>ОФІЦІЙНІ ТОВАРИ</div>
+        <img src="https://images.prom.ua/6072918579_w297_h200_shkilne-priladdya.jpg" >
+        <br><div>ШКІЛЬНЕ ПРИЛАДДЯ</div>
+        <img src="https://images.prom.ua/6378145047_w297_h200_korejska-kosmetika.jpg">
+        <br><div>КОРЕЙСЬКА КОСМЕТИКА</div></div>
+        <div class="prodykt" align="center">
+        <img src="https://images.prom.ua/6378145930_w297_h200_anime-tovari.jpg">
+        <br><div>АНІМЕ ТОВАРИ</div>
+        <img src="https://images.prom.ua/6488108723_w297_h200_tovari-po-doramah.jpg" 
+        <br><div>ТОВАРИ ПО ДОРАМАХ</div>
+        <img src="https://images.prom.ua/6378147063_w297_h200_korejski-smakoliki.jpg">
+        <br><div>КОРЕЙСЬКІ СМАКОЛИКИ</div>
+        <img src="https://images.prom.ua/6378148624_w297_h200_k-pop-igrashki.jpg">
+        <br><div>К-РОР ІГРАШКИ</div>
+        <img src="https://images.prom.ua/6219228923_w297_h200_posteri-a3.jpg">
+        <br><div>ПОСТЕРИ АЗ</div></div>
+        <div class="mini" align="center">
+        <img src="https://images.prom.ua/6280492922_w297_h200_nalipki.jpg">
+        <br><div>НАЛІПКИ</div>
+        <img src="https://images.prom.ua/6278874834_w297_h200_chashki.jpg">
+        <br><div>ЧАШКИ</div>
+        <img src="https://images.prom.ua/6378153297_w297_h200_brelochki--znachki.jpg">
+        <br><div>БРЕЛОЧКИ / ЗНАЧКИ</div>
+        <img src="https://images.prom.ua/6278462763_w297_h200_aksesuari-dlya-kartok.jpg">
+        <br><div>АКСЕСУАРИ ДЛЯ КАРТОК</div>
+        <img src="https://images.prom.ua/6278386489_w297_h200_shoperi.jpg">
+        <br><div>ШОПЕРИ</div>
+        </div>
+        <div class="miyon" align="center">
+            <img src="https://images.prom.ua/6278355780_w297_h200_akrilovi-figurki.jpg">
+            <br><div>АКРИЛОВІ ФІГУРКИ</div>
+            <img src="https://images.prom.ua/6275543758_w297_h200_k-pop-sumki.jpg">
+            <br><div>К-РОР СУМКИ</div>
+            <img src="https://images.prom.ua/6275530603_w297_h200_aksesuari.jpg">
+            <br><div>АКСЕСУАРИ</div>
+            <img src="https://images.prom.ua/6505095016_w297_h200_pazli.jpg">
+            <br><div>ПАЗЛИ</div>
+            <img src="https://images.prom.ua/6506852365_w297_h200_termochashki.jpg">
+            <br><div>ТЕРМОЧАШКИ</div>
+        </div>
+        </div>
+</body>
+</html>
+
+
+
